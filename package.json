@@ -1,0 +1,21 @@
+{
+  "name": "xo-react-pro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tests": "babel-tape-runner ./tests/**/*-test.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-exponentiation-operator": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-tape-runner": "^2.0.1",
+    "eslint": "^3.19.0",
+    "eslint-find-rules": "^1.14.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "tape": "^4.6.3"
+  }
+}
