@@ -2,5 +2,6 @@ machine:
     node:
       version: 7
 
-    script:
-      - 'npm run tests'
+    dependencies:
+      override:
+        - npm install --dev

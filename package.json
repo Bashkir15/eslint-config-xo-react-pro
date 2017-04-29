@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tests": "babel-tape-runner ./tests/**/*-test.js"
+    "test": "babel-tape-runner ./tests/**/*-test.js"
   },
   "license": "MIT",
   "devDependencies": {
