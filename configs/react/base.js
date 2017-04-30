@@ -65,7 +65,7 @@ module.exports = {
             eventHandlerPrefix: 'handle',
             eventHandlerPropPrefix: 'on',
         }],
-        'react/jsx-indent': ['off', 4]
+        'react/jsx-indent': ['off', 4],
         'react/jsx-indent-props': ['off', 4],
         'react/jsx-key': 'warn',
         'react/jsx-max-props-per-line': ['off', {
@@ -192,10 +192,6 @@ module.exports = {
             node: {
                 extensions: ['.js', '.jsx', '.json'],
             },
-
-            webpack: {
-                extensions: ['.js', '.jsx', '.json', '.css', '.sass', '.json'],
-            }
         },
 
         react: {
