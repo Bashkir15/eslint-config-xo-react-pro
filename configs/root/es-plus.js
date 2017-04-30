@@ -21,7 +21,7 @@ module.exports = {
             }
         ],
 
-        'arrow-parents': ['error', 'as-needed', {
+        'arrow-parens': ['error', 'as-needed', {
             requireForBlockBody: true,
         }],
 
@@ -56,7 +56,15 @@ module.exports = {
 
         'no-useless-constructor': 'error',
 
-        'no-useless-rename': ['error', 'always', {
+        'no-useless-rename': ['error', {
+            ignoreDestructuring: false,
+            ignoreImport: false,
+            ignoreExport: false,
+        }],
+
+        'no-var': 'error',
+
+        'object-shorthand': ['error', 'always', {
             ignoreConstructors: false,
             avoidQuotes: true,
         }],
@@ -99,7 +107,7 @@ module.exports = {
         }],
 
         'symbol-description': 'error',
-        'template-curcly-spacing': 'error',
+        'template-curly-spacing': 'error',
         'yield-star-spacing': ['error', 'after']
     }
 };

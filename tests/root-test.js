@@ -6,8 +6,8 @@ import test from 'tape';
 const files = {};
 
 
-fs.readdirSync(path.join(__dirname, '../../configs/root')).forEach((name) => {
-    files[name] = require(`../../configs/root/${name}`);
+fs.readdirSync(path.join(__dirname, '../configs/root')).forEach((name) => {
+    files[name] = require(`../configs/root/${name}`);
 });
 
 Object.keys(files).forEach((name) => {
