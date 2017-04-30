@@ -2,7 +2,10 @@ module.exports = {
     extends: [
         './errors',
         './vars',
-        './es-plus'
+        './es-plus',
+        './imports',
+        './opinions',
+        './stylish',
     ].map(require.resolve),
     parserOptions: {
         ecmaVersion: 2017,
@@ -11,8 +14,5 @@ module.exports = {
             experimentalObjectRestSpread: true,
         },
     },
-
-    rules: {
-        strict: 'error',
-    },
+    rules: {},
 };

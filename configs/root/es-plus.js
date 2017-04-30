@@ -14,7 +14,7 @@ module.exports = {
 
     rules: {
         'arrow-body-style': [
-            'error',
+            'warn',
             'as-needed',
             {
                 requireReturnForObjectLiteral: false,
@@ -36,9 +36,9 @@ module.exports = {
             after: true,
         }],
 
-        'no-class-assign': 'error',
+        'no-class-assign': 'warn',
 
-        'no-confusing-arrow': ['error', {
+        'no-confusing-arrow': ['warn', {
             allowParens: true,
         }],
 
@@ -54,7 +54,7 @@ module.exports = {
 
         'no-useless-computed-key': 'error',
 
-        'no-useless-constructor': 'error',
+        'no-useless-constructor': 'warn',
 
         'no-useless-rename': ['error', {
             ignoreDestructuring: false,
@@ -64,7 +64,7 @@ module.exports = {
 
         'no-var': 'error',
 
-        'object-shorthand': ['error', 'always', {
+        'object-shorthand': ['warn', 'always', {
             ignoreConstructors: false,
             avoidQuotes: true,
         }],

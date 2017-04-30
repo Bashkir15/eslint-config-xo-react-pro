@@ -17,8 +17,9 @@ function lint(text) {
 function Component(body) {
     return `
         import React from 'react';
+
         export default class TestComponent extends React.Component {
-            /* eslint class-methods-use-this: 0 */
+            /* eslint class-methods-use-this: 0, import/no-unresolved: 0, import/extensions: 0 */
             ${body}
         }
     `;
