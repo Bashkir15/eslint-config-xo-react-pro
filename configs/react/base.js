@@ -14,9 +14,13 @@ module.exports = {
     },
 
     rules: {
+        // Determine whether double or single quotes should be used in JSX
+        // Double by default to fit inline with standard HTML double quotes
         'jsx-quotes': ['error', 'prefer-double'],
 
-        'class-methods-use-this': ['error', {
+        // Requires the use of explicit context inside of methods methods
+        // React component lifecycles are an exception by default
+        'class-methods-use-this': ['warn', {
             exceptMethods: [
                 'render',
                 'getInitialState',
@@ -34,22 +38,35 @@ module.exports = {
 
         
 
+        // Enforces boolean attributes notation in JSX
+        // propName={true} vs. propName
         'react/jsx-boolean-value': ['error', 'never'],
+
+        // Validate where the closing bracket location falls for jsx
         'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
+
+        // Validates curly spacing in JSX, default no spaces between props curly braces
         'react/jsx-curly-spacing': ['error', 'never', {
             allowMultiline: true
         }],
+
+        // Enforces spaces in props propName = {prop} vs propName={prop}
+        // Second prefered for style reasons
         'react/jsx-equals-spacing': ['error', 'never'],
+
+        // Enforces jsx to only be written in files with a .jsx extension
         'react/jsx-filename-extension': ['error', {
             extensions: ['.jsx'],
         }],
+
+
         'react/jsx-first-prop-new-line': ['error', 'multiline'],
         'react/jsx-handler-names': ['off', {
             eventHandlerPrefix: 'handle',
             eventHandlerPropPrefix: 'on',
         }],
-        'react/jsx-indent': ['warn', 4],
-        'react/jsx-indent-props': ['warn', 4],
+        'react/jsx-indent': ['off', 4]
+        'react/jsx-indent-props': ['off', 4],
         'react/jsx-key': 'warn',
         'react/jsx-max-props-per-line': ['off', {
             maximum: 1,
@@ -105,7 +122,7 @@ module.exports = {
             forbid: [],
         }],
         'react/forbid-foreign-prop-types': 'off',
-        'react/forbid-prop-types': ['warn', {
+        'react/forbid-prop-types': ['off', {
             forbid: ['any', 'array', 'object'],
         }],
         'react/no-array-index-key': 'error',
@@ -144,7 +161,7 @@ module.exports = {
             skipUndeclared: false,
         }],
         'react/react-in-jsx-scope': 'error',
-        'react/require-default-props': 'warn',
+        'react/require-default-props': 'off',
         'react/require-extension': ['off', {
             extensions: ['.jsx', '.js'],
         }],
@@ -174,6 +191,10 @@ module.exports = {
         'import/resolver': {
             node: {
                 extensions: ['.js', '.jsx', '.json'],
+            },
+
+            webpack: {
+                extensions: ['.js', '.jsx', '.json', '.css', '.sass', '.json'],
             }
         },
 

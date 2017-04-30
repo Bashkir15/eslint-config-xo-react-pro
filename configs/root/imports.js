@@ -32,7 +32,7 @@ module.exports = {
     },
 
     rules: {
-        'import/no-unresolved': ['error', {
+        'import/no-unresolved': ['off', {
             commonjs: true,
             caseSensitive: true,
         }],
@@ -49,12 +49,12 @@ module.exports = {
         'import/imports-first': 'off',
         'import/no-duplicates': 'error',
         'import/no-namespace': 'off',
-        'import/extensions': ['error', 'always', {
+        'import/extensions': ['off', 'always', {
             js: 'never',
             jsx: 'never',
         }],
         'import/newline-after-import': 'error',
-        'import/prefer-default-export': 'warn',
+        'import/prefer-default-export': 'off',
         'import/no-restricted-paths': 'off',
     }
 };
