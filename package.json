@@ -1,5 +1,5 @@
 {
-  "name": "xo-react-pro",
+  "name": "eslint-config-xo-react-pro",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

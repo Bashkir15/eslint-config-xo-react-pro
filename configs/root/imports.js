@@ -42,6 +42,7 @@ module.exports = {
         'import/no-named-as-default': 'error',
         'import/no-named-as-default-member': 'error',
         'import/no-deprecated': 'off',
+        'import/no-extraneous-dependencies': 'off',
         'import/no-mutable-exports': 'error',
         'import/first': ['error', 'absolute-first'],
         'import/imports-first': 'off',

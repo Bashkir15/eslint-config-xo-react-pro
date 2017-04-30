@@ -34,6 +34,8 @@ module.exports = {
             ignoreStrings: true,
             ignoreTemplateLiterals: true,
         }],
+        'indent': 'off',
+        'strict': 'off',
         'object-curly-spacing': ['error', 'always'],
     }
 };
