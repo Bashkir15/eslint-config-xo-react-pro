@@ -21,7 +21,7 @@ module.exports = {
             }
         ],
 
-        'arrow-parens': ['error', 'as-needed', {
+        'arrow-parens': ['warn', 'as-needed', {
             requireForBlockBody: true,
         }],
 

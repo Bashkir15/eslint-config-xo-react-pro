@@ -1,4 +1,5 @@
 module.exports = {
+    parser: "babel-eslint",
     extends: [
         './configs/root/root',
         './configs/react/base',
