@@ -1,7 +1,7 @@
 
 # The xo-react-pro style guide
 
-*A simple an reasonable approach to React and JSX*
+*A simple and reasonable approach to React and JSX*
 
 ## Contents
 
@@ -46,7 +46,7 @@
     }
     ```
 
-    If your component doesn't need state, refs, or licecycle methods you should probably use a stateless functional component:
+    If your component doesn't need state, refs, or lifecycle methods you should probably use a stateless functional component:
 
     ```jsx
     // Incorrect
